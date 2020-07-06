@@ -19,7 +19,7 @@
 - in browser access link
 
   ```
-    http://localhost:3000/?plain=0000000000000000
+    http://localhost:9000/?plain=0000000000000000
     
   ```
   plain is param pass
