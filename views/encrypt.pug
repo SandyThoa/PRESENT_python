@@ -2,9 +2,6 @@ extends layout
 
 block content
   form(action="/encrypt", method="get")
-    div(class='title-encrypt') 
-      button(type="submmit")
-        h2 Encrypt
     div(class='content-encrypt' id='content-encrypt')
         div(class="group-input")
           label(for="plain") Plaintext
@@ -19,7 +16,9 @@ block content
             label(for="key") Key
             input(type="text", name="key" minlength="20" maxlength="20")
             div(class='clear-both')
-        
+    div(class='title-encrypt') 
+      button(type="submmit")
+        h2 Encrypt    
   script.
     function openCity(evt, nameTab) {
       var i, tabcontent, tablinks;
