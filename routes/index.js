@@ -3,10 +3,12 @@ var router = express.Router();
 
 router.get('/encrypt', function (req, res, next) {
   const { spawn } = require('child_process');
+  console.log(req.query);
+
   var process = spawn('python', [
     './encrypt.py',
     req.query.plain,
-    req.query.key,
+    req.query.key
   ]);
   process.stdout.on('data', function (data) {
     res.render('encrypted', { result: data.toString() });
@@ -18,7 +20,7 @@ router.get('/decrypt', function (req, res, next) {
   var process = spawn('python', [
     './decrypt.py',
     req.query.cipher,
-    req.query.key,
+    req.query.key
   ]);
   process.stdout.on('data', function (data) {
     res.render('decrypted', { result: data.toString() });
