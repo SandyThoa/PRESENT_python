@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
-  background-image: url(https://d3dfaj4bukarbm.cloudfront.net/staging/images/admin/c05aa1d6-173f-446c-a8ed-36c1234007c5.jpeg);
+  background-image: url(https://d3dfaj4bukarbm.cloudfront.net/staging/images/admin/8d260e6f-36a0-44ac-9a31-1b9ea91c2eb2.jpeg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,6 +17,8 @@ a {
 }
 .title {
   text-align: center;
+  color: #fcc0c0;
+  margin: 45px 0;
 }
 
 .title-encrypt {
@@ -135,8 +137,10 @@ body {
 .encrypted {
   width: 20%;
   margin: 0 auto;
+  border-radius: 5px;
   padding: 20px;
-  background: #1e7eba;
+  background: #0091eb;
+  box-shadow: 0px 1.85969px 1.71664px rgba(0,0,0,0.0112458), 0px 4.46909px 4.12532px rgba(0,0,0,0.0161557), 0px 8.41491px 7.76761px rgba(0,0,0,0.02);
 }
 
 .bg-decrypted {
@@ -145,6 +149,7 @@ body {
 
 .title-encrypt .h1-Encrypted {
   margin-top: 70px;
+  color: #fff;
 }
 
 .button-header {
