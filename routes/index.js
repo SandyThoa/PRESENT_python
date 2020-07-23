@@ -11,7 +11,8 @@ router.get('/encrypt', function (req, res, next) {
     req.query.key
   ]);
   process.stdout.on('data', function (data) {
-    res.render('encrypted', { result: data.toString() });
+    data = JSON.parse(data.toString());
+    res.render('encrypted', { result: data.cipher, sboxs: data.sboxs });
   });
 });
 
@@ -23,7 +24,8 @@ router.get('/decrypt', function (req, res, next) {
     req.query.key
   ]);
   process.stdout.on('data', function (data) {
-    res.render('decrypted', { result: data.toString() });
+    data = JSON.parse(data.toString());
+    res.render('decrypted', { result: data.decipher, sboxs: data.sboxs });
   });
 });
 
